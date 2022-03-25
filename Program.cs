@@ -11,14 +11,14 @@ namespace homework2._1
         static void Main(string[] args)
         {
             Console.WriteLine("Введите строку: ");
-            while (true)
+            bool isWork = true;
+            while (isWork)
             {
                 string newUserString = Console.ReadLine();
                 if (newUserString == "exit") 
                 {
-                    break;
+                    isWork = false;
                 }
-
             }
         }
     }
